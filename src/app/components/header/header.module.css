@@ -1,0 +1,202 @@
+.header {
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: center; /* Center the navigation */
+  align-items: center;
+  width: 100%;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center; /* Center the links in the ul */
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Remove margin to allow centering */
+}
+
+.nav ul li {
+  margin: 0 20px; /* Set horizontal spacing between links */
+}
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color: crimson;
+  font-weight: bold;
+}
+
+.img {
+  border-radius: 50%;
+  border: 3px solid crimson;
+  margin-left: 30px;
+}
+
+/* Live button styling */
+.live {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.live a {
+  display: flex;
+  align-items: center;
+  color: white;
+  background-color: crimson;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  height: 30px;
+  width: 90px;
+  margin-left: 50px;
+}
+
+.live a:hover {
+  background-color: white;
+  color: crimson;
+}
+
+.live span {
+  margin-left: 0.5rem;
+}
+
+/* Sidebar menu for small screens */
+.menuIcon {
+  display: none;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Hidden initially */
+  height: 100%;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  transition: right 0.3s ease;
+  padding-top: 2rem;
+}
+
+.sidebar.open {
+  right: 0; /* Show the sidebar */
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2rem;
+  color: white; /* Set close button color to white */
+  cursor: pointer;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.sidebar ul li a {
+  display: flex; /* Align items */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  color: crimson;
+}
+
+.sidebar ul li a svg {
+  margin-right: 0.5rem; /* Space between icon and text */
+}
+
+/* Responsive: Show menu icon on small screens */
+@media (min-width: 1200px) {
+  .nav {
+    justify-content: center; /* Center nav items for large screens */
+  }
+
+  .nav ul {
+    margin-left: 0; /* No left margin for large screens */
+  }
+
+  .live {
+    margin-left: 20px; /* Adjust live button margin */
+  }
+}
+
+@media (max-width: 768px) {
+  .nav ul {
+    display: none; /* Hide the links for small screens */
+  }
+
+  .menuIcon {
+    display: block;
+    font-size: 2rem;
+    color: white; /* Set menu icon color to white */
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  .live {
+    display: none; /* Hide live button on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 1rem; /* Reduce padding for small screens */
+  }
+
+  .nav ul {
+    margin-left: 0; /* Remove left margin on small screens */
+    flex-direction: column; /* Stack nav items vertically */
+    width: 100%; /* Full width */
+    position: absolute; /* Position absolutely */
+    top: 50px; /* Below the header */
+    background-color: rgba(0, 0, 0, 0.9); /* Background for dropdown */
+  }
+
+  .nav ul li {
+    margin: 10px 0; /* Adjust margin for vertical layout */
+    text-align: center; /* Center text */
+  }
+
+  .live a {
+    width: auto; /* Adjust live button width */
+  }
+}

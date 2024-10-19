@@ -1,0 +1,89 @@
+/* hero2.module.css */
+
+/* hero2.module.css */
+
+/* Existing styles remain unchanged */
+
+.section {
+    text-align: center; /* Center align the content */
+    background-color: white; /* White background */
+    padding: 20px; /* Padding for the section */
+}
+
+.heading {
+    font-size: 2.5rem; /* Large font size for the main heading */
+    font-weight: bold; /* Bold font for the main heading */
+    color: black; /* Black color for the main heading */
+}
+
+.subheading {
+    font-size: 2rem; /* Large font size for the subheading */
+    font-weight: bold; /* Bold font for the subheading */
+    color: black; /* Black color for the subheading */
+}
+
+.date {
+    font-size: 1.5rem; /* Large font size for the date */
+    font-weight: bold; /* Bold font for the date */
+    color: crimson; /* Crimson color for the date */
+}
+
+.p {
+    font-size: 1.2rem; /* Large font size for paragraphs */
+    font-weight: normal; /* Normal weight for paragraphs */
+    text-align: justify; /* Justify the text */
+    color: gray; /* Gray color for the paragraph text */
+}
+
+/* Styles for images */
+.image {
+    display: inline-block; /* Center the images */
+    margin: 10px; /* Margin around images */
+    max-width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+    opacity: 0; /* Start off hidden */
+    transform: translateX(50%); /* Start off shifted to the right */
+    transition: transform 0.5s ease, opacity 0.5s ease, border-color 0.3s ease; /* Animation on load and hover */
+    border: 5px solid black; 
+    border-radius: 15px;
+}
+
+
+
+
+/* Keyframes for animations */
+@keyframes slideInLeft {
+    to {
+        opacity: 1; /* Fully visible */
+        transform: translateX(0); /* End at original position */
+    }
+}
+
+@keyframes slideInRight {
+    to {
+        opacity: 1; /* Fully visible */
+        transform: translateX(0); /* End at original position */
+    }
+}
+
+/* Animation classes */
+.image.left {
+    animation: slideInLeft 0.5s forwards; /* Animate sliding in from the left */
+}
+
+.image.right {
+    animation: slideInRight 0.5s forwards; /* Animate sliding in from the right */
+}
+
+/* Hover effects */
+.image:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+    transition: transform 0.3s ease; /* Smooth scaling */
+}
+
+.caption {
+    font-size: 1.1rem; /* Slightly smaller font size for captions */
+    text-align: center; /* Justify the caption text */
+    color: gray; /* Gray color for captions */
+    margin-top: 10px; /* Margin for spacing */
+}

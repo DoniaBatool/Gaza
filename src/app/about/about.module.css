@@ -1,0 +1,275 @@
+/* Container for the entire About page */
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  color: black;
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
+}
+
+/* Content box styling */
+.content {
+  text-align: center;
+  max-width: 80vw;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 0;
+  z-index: 2;
+}
+
+/* Container for images in the center */
+.images-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  gap: 10px;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Left and right images container */
+.left-images, .right-images {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  gap: 10px;
+  width: 20%; /* Each side takes up 20% width */
+}
+
+
+
+.imageContainerNew{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Full width container */
+  padding: 20px; /* Padding around the container */
+  }
+  .imageContainerNew > img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    align-items: center;
+  }
+
+
+
+
+
+.left-images img:hover, .right-images img:hover, .center-images img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Main heading styles */
+.h1 {
+  font-size: 3.5rem;
+  color: black;
+  font-weight: bold;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Subheading styles */
+.h1para {
+  font-weight: bold;
+  font-size: 2rem;
+  color: black;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+/* Paragraph styling */
+.paragraph {
+  text-align: justify;
+  margin: 0.5rem 0;
+  font-size: x-large;
+}
+
+/* Animation for images */
+.imageAnimation {
+  margin: 1rem 0;
+  border-radius: 10px;
+  border: 5px solid black; /* Apply border to all images */
+  opacity: 0;
+  animation: slideIn 1s forwards;
+  width: 480px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+/* Responsive Styling */
+
+/* Small devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .images-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-images, .right-images {
+    width: 100%; /* Full width on small screens */
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .left-images img, .right-images img {
+    height: auto;
+    width: 100%;
+  }
+
+  .center-images img {
+    width: 90%; /* Adjust center image for small screens */
+  }
+
+  .h1 {
+    font-size: 2rem;
+  }
+
+  .h1para {
+    font-size: 1.5rem;
+  }
+
+  .paragraph {
+    font-size: large;
+  }
+}
+
+/* Medium devices (768px to 1024px) */
+@media (min-width: 320px) and (max-width: 1025px) {
+  .images-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-images, .right-images {
+    width: 80%;
+    flex-direction: row;
+  }
+
+  .center-images img {
+    width: 85%;
+    
+  }
+
+  .h1 {
+    font-size: 3rem;
+  }
+
+  .h1para {
+    font-size: 2.5rem;
+  }
+
+  .paragraph {
+    font-size: x-large;
+  }
+}
+@media (min-width: 320px) and (max-width: 510px) {
+  .images-container {
+    flex-wrap: nowrap;
+    width:80%;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 10px;
+
+  }
+
+  .left-images, .right-images {
+    width: 80%;
+    flex-direction:column;
+    
+  }
+}
+@media (max-width: 990px) {
+
+  .right-imagesNew{
+    width:40%;
+    height:80vh;
+     flex-direction: column;
+  }
+  .imageContainerNew{
+     
+     align-items: center;
+  }
+
+}
+
+/* Large devices (1024px to 1200px) */
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .images-container {
+    flex-wrap: nowrap;
+  }
+
+  .left-images, .right-images {
+    width: 20%;
+  }
+
+  .center-images img {
+    width: 60%;
+  }
+
+  .h1 {
+    font-size: 3.5rem;
+  }
+
+  .h1para {
+    font-size: 2.5rem;
+  }
+}
+
+/* Extra large devices (1200px and above) */
+@media (min-width: 1200px) {
+  .images-container {
+    width: 95%;
+  }
+
+  .left-images, .right-images {
+    width: 20%;
+  }
+
+  .center-images img {
+    width: 60%;
+  }
+
+  .h1 {
+    font-size: 3.5rem;
+  }
+
+  .h1para {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .imageAnimation {
+    width: 90%; /* Ensures the image takes up 90% of screen width on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .imageAnimation {
+    width: 95%; /* Make the image slightly larger on very small screens */
+  }
+}

@@ -1,0 +1,19 @@
+.home {
+    height: 100vh; /* Full viewport height */
+    width:100vw;
+    background-image: url("/gaza/gazabackground.webp"); /* Replace with your image path */
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color to stand out against background */
+  }
+  
+  .content {
+    
+    text-align: center;
+  }
+
+  

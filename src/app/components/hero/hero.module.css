@@ -1,0 +1,88 @@
+.hero {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: white;
+  margin: 0.5rem 0;
+}
+
+.hero h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+.alert {
+  color: white;
+  text-align: center;
+  background-color: crimson;
+  border-radius: 5px;
+  width: 400px;
+  height: 10px;
+  font-size: xx-large;
+  padding-bottom: 50px;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Small screens (max-width: 600px) */
+@media (max-width: 600px) {
+  .h1 {
+    font-size: 1.8rem; /* Reduce the h1 font size */
+  }
+
+  .hero h2 {
+    font-size: 1rem; /* Reduce h2 font size */
+  }
+
+  .alert {
+    width: 90%; /* Make alert div flexible on small screens */
+    font-size: large; /* Adjust font size for alert on small screens */
+    padding-bottom: 30px; /* Reduce padding for better fit */
+  }
+}
+
+/* Medium screens (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .h1 {
+    font-size: 2.2rem; /* Slightly reduce h1 font size */
+  }
+
+  .hero h2 {
+    font-size: 1.1rem; /* Adjust h2 font size */
+  }
+
+  .alert {
+    width: 70%; /* Adjust width for tablets */
+    font-size: x-large; /* Adjust font size for better readability */
+    padding-bottom: 40px; /* Adjust padding */
+  }
+}
+
+/* Large screens (min-width: 1025px) */
+@media (min-width: 1025px) {
+  .h1 {
+    font-size: 2.5rem; /* Keep h1 size as is */
+  }
+
+  .hero h2 {
+    font-size: 1.25rem; /* Keep h2 size as is */
+  }
+
+  .alert {
+    width: 400px; /* Keep width for large screens */
+    font-size: xx-large; /* Keep alert font size as is */
+    padding-bottom: 50px; /* Keep padding */
+  }
+}
