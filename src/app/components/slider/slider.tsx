@@ -3,8 +3,8 @@
 
 // components/Slider.tsx
 import React, { useState, useEffect } from 'react';
-import styles from './slider.module.css';
-import Image from 'next/image';
+import styles from '@/app/components/slider/slider.module.css';
+
 
 
 const slides = [
@@ -44,12 +44,7 @@ const Slider = () => {
   return (
     <main>
       
-      <Image className={styles.slideHead}
-      src="/gaza/slideHead.jpg"
-      alt=""
-      width={1400}
-      height={100}
-      />
+      
     <div className={styles.sliderContainer}>
       <div className={styles.slides}>
         <button className={styles.prevButton} onClick={prevSlide}>

@@ -59,7 +59,7 @@ const Header = () => {
             <Link href="/about" onClick={toggleSidebar}>About</Link>
           </li>
           <li>
-            <Link href="/gallery" onClick={toggleSidebar}>Gallery</Link>
+            <Link href="/Gallery" onClick={toggleSidebar}>Gallery</Link>
           </li>
           <li>
             <Link href="/gazaMap" onClick={toggleSidebar}>GazaMaps</Link>

@@ -1,14 +1,13 @@
 import Image from "next/image";
 import styles from "@/app/components/hero/hero2.module.css";
 
-
 const Hero2 = () => {
   return (
     <section className={styles.section}>
-      <div>
-        <h1 className={styles.heading}>Israel-Palestine conflict</h1>
+      <div className={styles.container}>
+        <h1 className={styles.heading}>Israel-Palestine Conflict</h1>
         <div>
-          <p>
+          <p className={styles.caption}>
             Palestinians living near Netzarim Corridor in central Gaza told to
             <br />
             leave as Israel prepares to use great force against Hamas.
@@ -20,7 +19,7 @@ const Hero2 = () => {
             width={900}
             className={`${styles.image} ${styles.right}`} // Apply right animation
           />
-          <p>
+          <p className={styles.caption}>
             The latest Israeli evacuation order is the first issued in weeks for
             Gaza and could signal a new wave of mass displacement
             <br />
@@ -30,11 +29,11 @@ const Hero2 = () => {
           <br />
           <p className={styles.date}>5 Oct 2024</p>
           <br />
-          <p>
+          <p className={styles.caption}>
             Israel has issued a new warning to thousands of displaced Palestinians
             sheltering in
             <br />
-            central Gaza, saying its military is preparing to use “great force”
+            central Gaza, saying its military is preparing to use “great force” 
             against Hamas in the
             <br />
             area as it continues to pummel
@@ -44,7 +43,7 @@ const Hero2 = () => {
             12 people since Saturday morning.
           </p>
           <br />
-          <p>
+          <p className={styles.caption}>
             The evacuation call issued on Saturday is the first in weeks for Gaza,
             signalling another
             <br />
@@ -63,17 +62,11 @@ const Hero2 = () => {
           <Image
             src="/gaza/shifa2.jpg"
             alt="shifa2"
-            width={500}
+            width={900} // Set width to 900 to match other images
             height={500}
             className={`${styles.image} ${styles.left}`} // Apply left animation
           />
-          <Image
-            src="/gaza/shifa1.jpg"
-            alt="shifa1"
-            width={500}
-            height={500}
-            className={`${styles.image} ${styles.right}`} // Apply right animation
-          />
+         
           <p className={styles.caption}>
             This combination of pictures shows the damage at Gaza Al-Shifa hospital
             after the Israeli military
@@ -86,7 +79,7 @@ const Hero2 = () => {
           <Image
             src="/gaza/shifa3.jpg"
             alt="shifa3"
-            width={900}
+            width={900} // Set width to 900 to match other images
             height={600}
             className={`${styles.image} ${styles.left}`} // Apply left animation
           />

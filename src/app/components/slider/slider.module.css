@@ -4,6 +4,7 @@
   margin: auto;
   position: relative;
   height: 100vh; /* Use viewport height for full-screen effect */
+  padding-top: 60px;
 }
 
 .slides {
@@ -129,7 +130,7 @@
   display: flex;
   justify-content: center;
   margin-top: 10px;
-  transform: translateY(-300%);
+  transform: translateY(-150%);
 }
 
 .thumbnail {

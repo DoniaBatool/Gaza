@@ -7,66 +7,16 @@ const About = () => {
     <div>
       <div className={styles["about-container"]}>
         <div className={styles.content}>
-          <div className={styles["gaza-today"]}>
-            <h1 className={styles.h1}>Gaza Today</h1>
-          </div>
-
-          <div className={styles["images-container"]}>
-            <div className={styles["left-images"]}>
-              <Image 
-                src="/gaza/about/img1.jpg" 
-                alt="aboutpic1" 
-                width={320} 
-                height={225} 
-                className={styles.imageAnimation}
-              />
-              <Image 
-                src="/gaza/about/img2.jpg" 
-                alt="aboutpic2" 
-                width={320} 
-                height={225} 
-                className={styles.imageAnimation}
-              />
-              <Image 
-                src="/gaza/about/img7.jpg" 
-                alt="aboutpic7" 
-                width={320} 
-                height={225} 
-                className={styles.imageAnimation}
-              />
-            </div>
-
+          {/* Removed the Gaza Today heading */}
+          
+          <div className={styles["image-container"]}>
             <Image 
               src="/gaza/about/img10.jpg" 
               alt="aboutpic3" 
-              width={400} 
+              width={800}  // Set a larger width for better responsiveness
               height={450} 
               className={styles.imageAnimation}
             />
-
-            <div className={styles["right-images"]}>
-              <Image 
-                src="/gaza/about/img3.jpg" 
-                alt="aboutpic4" 
-                width={320} 
-                height={225} 
-                className={styles.imageAnimation}
-              />
-              <Image 
-                src="/gaza/about/img4.jpg" 
-                alt="aboutpic5" 
-                width={320} 
-                height={225} 
-                className={styles.imageAnimation}
-              />
-              <Image 
-                src="/gaza/about/img6.jpg" 
-                alt="aboutpic6" 
-                width={320} 
-                height={225} 
-                className={styles.imageAnimation}
-              />
-            </div>
           </div>
 
           <h1 className={styles.h1para}>
@@ -93,7 +43,6 @@ const About = () => {
               height={450} 
               className={styles.imageAnimation}
             />
-            
           </div>
         </div>
       </div>

@@ -1,25 +1,29 @@
-/* hero2.module.css */
-
-/* hero2.module.css */
-
-/* Existing styles remain unchanged */
-
 .section {
     text-align: center; /* Center align the content */
     background-color: white; /* White background */
     padding: 20px; /* Padding for the section */
+    overflow-y: auto; /* Allow scrolling if content overflows */
 }
+
+.container {
+    max-width: 80vw; /* Container takes up 80% of the screen width */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add padding for small screens */
+}
+
+/* Global styles for text */
+
 
 .heading {
     font-size: 2.5rem; /* Large font size for the main heading */
     font-weight: bold; /* Bold font for the main heading */
-    color: black; /* Black color for the main heading */
+    color:black; /* Black color for the main heading */
 }
 
 .subheading {
     font-size: 2rem; /* Large font size for the subheading */
     font-weight: bold; /* Bold font for the subheading */
-    color: black; /* Black color for the subheading */
+    color:black; /* Black color for the subheading */
 }
 
 .date {
@@ -32,7 +36,7 @@
     font-size: 1.2rem; /* Large font size for paragraphs */
     font-weight: normal; /* Normal weight for paragraphs */
     text-align: justify; /* Justify the text */
-    color: gray; /* Gray color for the paragraph text */
+    
 }
 
 /* Styles for images */
@@ -43,13 +47,10 @@
     height: auto; /* Maintain aspect ratio */
     opacity: 0; /* Start off hidden */
     transform: translateX(50%); /* Start off shifted to the right */
-    transition: transform 0.5s ease, opacity 0.5s ease, border-color 0.3s ease; /* Animation on load and hover */
-    border: 5px solid black; 
-    border-radius: 15px;
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Animation on load and hover */
+    border: none; /* Remove the border */
+    border-radius: 15px; /* Border radius for images */
 }
-
-
-
 
 /* Keyframes for animations */
 @keyframes slideInLeft {
@@ -83,7 +84,26 @@
 
 .caption {
     font-size: 1.1rem; /* Slightly smaller font size for captions */
-    text-align: center; /* Justify the caption text */
-    color: gray; /* Gray color for captions */
+    text-align:center; /* Center the caption text */
+    color: black; /* Gray color for captions */
     margin-top: 10px; /* Margin for spacing */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2rem;
+    }
+
+    .subheading {
+        font-size: 1.5rem;
+    }
+
+    .date {
+        font-size: 1.2rem;
+    }
+
+    .p {
+        font-size: 1rem;
+    }
 }
