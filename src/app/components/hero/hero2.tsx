@@ -25,10 +25,10 @@ const Hero2 = () => {
             <br />
             and another humanitarian crisis.
           </p>
-          <br />
+          
           <br />
           <p className={styles.date}>5 Oct 2024</p>
-          <br />
+          
           <p className={styles.caption}>
             Israel has issued a new warning to thousands of displaced Palestinians
             sheltering in
@@ -46,26 +46,20 @@ const Hero2 = () => {
           <p className={styles.caption}>
             The evacuation call issued on Saturday is the first in weeks for Gaza,
             signalling another
-            <br />
+            
             possible humanitarian crisis with a new wave of mass displacement as
             Israel war approaches
-            <br />
+            
             its one-year mark,
             having killed at least 41,825 Palestinians, mostly women
-            <br />
+            
             and children, and wounded at least 96,910.
           </p>
-          <br />
+          
           <h2 className={styles.subheading}>
             PHOTOS: Before and after of Israeli raid on (Al Shifa Hospital) Gaza
           </h2>
-          <Image
-            src="/gaza/shifa2.jpg"
-            alt="shifa2"
-            width={900} // Set width to 900 to match other images
-            height={500}
-            className={`${styles.image} ${styles.left}`} // Apply left animation
-          />
+          
          
           <p className={styles.caption}>
             This combination of pictures shows the damage at Gaza Al-Shifa hospital

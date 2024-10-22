@@ -48,6 +48,7 @@
     transition: transform 0.5s ease, opacity 0.5s ease; /* Animation on load and hover */
     border: none; /* Remove the border */
     border-radius: 15px; /* Border radius for images */
+    
 }
 
 /* Keyframes for animations */

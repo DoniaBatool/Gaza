@@ -28,9 +28,22 @@
 /* Lightbox Image */
 .lightboxImage {
   max-width: 100%; /* Ensures the image doesn't exceed the container */
-  max-height: 80vh; /* Ensures the image doesn't take up the full height */
+  max-height: 80vh; /* Default max height */
   object-fit: contain; /* Ensures the image retains its aspect ratio */
   border-radius: 10px; /* Optional: rounded corners */
+}
+
+/* Increase height for mobile devices */
+@media (max-width: 768px) {
+  .lightboxImage {
+    max-height: 95vh; /* Increase height to 95% of the viewport height */
+  }
+}
+
+@media (max-width: 480px) {
+  .lightboxImage {
+    max-height: 90vh; /* You can adjust this value as needed for very small devices */
+  }
 }
 
 /* Close Button */
