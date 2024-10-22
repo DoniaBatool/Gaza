@@ -1,5 +1,3 @@
-/* Container for the entire About page */
-
 .about-container {
   display: flex;
   flex-direction: column;
@@ -13,8 +11,6 @@
   color: black;
   position: relative;
   z-index: 1;
-
-   
 }
 
 /* Content box styling */
@@ -23,18 +19,8 @@
   max-width: 80%; /* This ensures the content stays centered and is responsive */
   padding: 1rem;
   border-radius: 10px;
-  margin-top:0;
+  margin-top: 0;
   z-index: 2;
-}
-
-/* Main heading styles */
-.h1 {
-  font-size: 3.5rem;
-  color: black;
-  font-weight: bold;
-  margin: 1rem 0;
-  text-transform: uppercase;
-  text-align: center;
 }
 
 /* Subheading styles */
@@ -51,6 +37,7 @@
   text-align: justify;
   margin: 0.5rem 0;
   font-size: x-large;
+  line-height: 1.6; /* Adjusted line-height for better text flow */
 }
 
 /* Animation for images */
@@ -62,13 +49,11 @@
   width: 100%; /* Set image width to 100% */
   max-width: 800px; /* Optional: Set a max width for larger screens */
 }
+
 .image-container {
-   padding-top: 50px;
-
-
+  padding-top: 50px;
+  
 }
-
-
 
 @keyframes slideIn {
   from {
@@ -82,32 +67,46 @@
 }
 
 /* Responsive Styling */
-@media (max-width: 768px) {
+@media (max-width: 1660px) {
   .imageAnimation {
     width: 100%; /* Ensures the image takes up 100% of parent container */
-  }
-
-  .h1 {
-    font-size: 2rem;
+    max-width: 100%; /* For smaller screens, make sure it doesn't overflow */
   }
 
   .h1para {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Reduce font size for subheading */
   }
 
   .paragraph {
     font-size: large;
+    line-height: 1.4; /* Slightly reduced line-height for medium screens */
+    margin: 0.25rem 0; /* Reduce vertical margin between paragraphs */
+  }
+
+  .image-container {
+    padding-top: 50px; /* Less padding on mobile for better fit */
   }
 }
 
-@media (min-width: 320px) and (max-width: 1025px) {
-  .h1 {
-    font-size: 3rem;
+@media (max-width: 480px) {
+  .imageAnimation {
+    width: 100vw; /* Set the image width to 100% of the viewport width */
+    height: auto; /* Adjust height to maintain aspect ratio */
+    margin: 0; /* Remove margin to avoid spacing around the image */
+    border-radius: 0; /* Remove border radius for a full-width effect */
+  }
+
+  .image-container {
+    padding-top: 50px; /* Remove padding on small screens */
   }
 
   .h1para {
-    font-size: 2.5rem;
+    font-size: 1.2rem; /* Adjust subheading size for small devices */
+  }
+
+  .paragraph {
+    font-size: medium;
+    line-height: 1.3; /* More compact line-height for small screens */
+    margin: 0.2rem 0; /* Further reduce margin for tighter spacing */
   }
 }
-
-

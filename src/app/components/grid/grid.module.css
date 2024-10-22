@@ -1,0 +1,46 @@
+
+/* Lightbox Overlay */
+.lightboxOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Lightbox Content */
+.lightboxContent {
+  max-width: 90vw; /* Prevents image from touching left and right sides */
+  max-height: 80vh; /* Ensures image doesn't take up the full height */
+  padding: 20px; /* Add padding around the image */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px; /* Add margin to keep some space around the lightbox */
+}
+
+/* Lightbox Image */
+.lightboxImage {
+  max-width: 100%; /* Ensures the image doesn't exceed the container */
+  max-height: 80vh; /* Ensures the image doesn't take up the full height */
+  object-fit: contain; /* Ensures the image retains its aspect ratio */
+  border-radius: 10px; /* Optional: rounded corners */
+}
+
+/* Close Button */
+.closeButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+}
