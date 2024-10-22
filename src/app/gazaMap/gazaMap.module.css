@@ -24,7 +24,6 @@
 .h4 {
   color:black; /* White color for h4 */
   text-align: center; /* Center h4 text */
-  margin-bottom: 20px; /* Space below */
   font-weight: 500;
   font-size: x-large;
 }
@@ -40,14 +39,14 @@
   font-size:xx-large;
   font-weight:900;
   padding: 10px; /* Padding for better appearance */
-  margin-bottom: 20px; /* Space below */
+  
 
   
 }
 
 .image {
   border-radius: 15px; /* Smooth edges for images */
-  margin-bottom: 30px; /* Adds space between images and the following content */
+  margin-bottom: 10px; /* Adds space between images and the following content */
   width: 100%; /* Full width for responsiveness */
   max-width: 900px; /* Limit max width */
   height: auto; /* Maintain aspect ratio */
@@ -56,7 +55,7 @@
 }
 .imageLast{
   border-radius: 15px; /* Smooth edges for images */
-  margin-bottom: 30px; /* Adds space between images and the following content */
+  margin-bottom: 10px; /* Adds space between images and the following content */
   width: 100%; /* Full width for responsiveness */
   max-width: 900px; /* Limit max width */
   height: 300px; /* Maintain aspect ratio */

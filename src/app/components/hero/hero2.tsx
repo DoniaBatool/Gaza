@@ -42,7 +42,7 @@ const Hero2 = () => {
             <br />
             12 people since Saturday morning.
           </p>
-          <br />
+          
           <p className={styles.caption}>
             The evacuation call issued on Saturday is the first in weeks for Gaza,
             signalling another
