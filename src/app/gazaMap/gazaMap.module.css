@@ -1,100 +1,108 @@
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center items horizontally */
-  justify-content: center; /* Center items vertically */
-  min-height: 100vh; /* Ensures the content is vertically centered */
-  background-color: white; /* Dark background */
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: white;
   background-size: cover;
-  width: 100vw; /* Full viewport width */
-  color: white; /* Default text color */
-  padding: 20px; /* Adds some spacing around the content */
-  padding-top: 50px; /* Space at the top */
-  box-sizing: border-box; /* Include padding in the width calculation */
+  width: 100vw;
+  padding: 20px;
+  padding-top: 50px;
+  box-sizing: border-box;
 }
 
+/* Header Styling */
 .h1 {
-  color:black; /* Crimson color for h1 */
-  text-align: center; /* Center h1 text */
-  margin-bottom: 10px; /* Space below */
+  color: black; 
+  text-align: center;
+  margin-bottom: 10px;
   font-size: xx-large;
   font-weight: 500;
 }
 
 .h4 {
-  color:black; /* White color for h4 */
-  text-align: center; /* Center h4 text */
+  color: black;
+  text-align: justify;
   font-weight: 500;
   font-size: x-large;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-.divh6 {
-  color: black; /* White color for h6 */
-  text-align: center; /* Center h6 text */
-  background-color:white;
-  border-radius: 5px;
-  width: 100%; /* Full width for responsiveness */
-  max-width: 400px; /* Limit max width */
-  height: auto; /* Height adapts based on content */
-  font-size:xx-large;
-  font-weight:900;
-  padding: 10px; /* Padding for better appearance */
-  
 
-  
+/* Other Styles */
+.divh6 {
+  color: black;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px;
+  font-size: xx-large;
+  font-weight: 900;
+  padding: 10px;
+  padding-top: 30px;
 }
 
 .image {
-  border-radius: 15px; /* Smooth edges for images */
-  margin-bottom: 10px; /* Adds space between images and the following content */
-  width: 100%; /* Full width for responsiveness */
-  max-width: 900px; /* Limit max width */
-  height: auto; /* Maintain aspect ratio */
+  border-radius: 15px;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
   padding-right: 12px;
-  
 }
-.imageLast{
-  border-radius: 15px; /* Smooth edges for images */
-  margin-bottom: 10px; /* Adds space between images and the following content */
-  width: 100%; /* Full width for responsiveness */
-  max-width: 900px; /* Limit max width */
-  height: 300px; /* Maintain aspect ratio */
+
+.imageLast {
+  border-radius: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 900px;
+  height: 300px;
   padding-right: 12px;
-  
 }
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .h1 {
-      font-size: large; /* Adjust font size */
+    font-size: large;
   }
 
   .h4 {
-      font-size: medium; /* Adjust font size */
+    font-size: medium;
+  }
+
+  .paragraph {
+    font-size: medium; /* Adjust font size for smaller screens */
   }
 
   .divh6 {
-      font-size: large; /* Adjust font size */
-      margin-right: 30px;
-      margin-top: 70px;
-      
+    font-size: large;
+    margin-right: 30px;
+    margin-top: 30px;
   }
 
   .container {
-      padding: 10px; /* Adjust padding for smaller screens */
+    padding: 10px;
   }
 }
 
 @media (max-width: 480px) {
   .h1 {
-      font-size: medium; /* Further adjust font size */
+    font-size: medium;
   }
 
   .h4 {
-      font-size: small; /* Further adjust font size */
+    font-size: small;
+  }
+
+  .paragraph {
+    font-size: small;
   }
 
   .divh6 {
-      font-size: medium; /* Further adjust font size */
-      margin-right: 14px;
+    font-size: medium;
+    margin-right: 14px;
+    margin-top: 30px;
   }
 }
